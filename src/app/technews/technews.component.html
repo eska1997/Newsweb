@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    
+    <h4>Technology news</h4>
+    <div class="row">
+
+        <div *ngFor="let d of techNewsDisplay" class="col-lg-3">
+
+            <div class="box">
+                <img src="{{d.urlToImage}} " width="100%">
+                <h5 class="mt-2">{{d.title}}</h5>
+                <a href="{{d.url}}" target="_blank" class="btn btn-sm btn-dark mt-2">Read More</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
